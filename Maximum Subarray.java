@@ -14,9 +14,9 @@ class Solution {
         int newSum=nums[0];
         for(int i=1;i<n;i++)
         {
-               newSum+=nums[i];
+             newSum+=nums[i];
+            newSum = Math.max(newSum,nums[i]);
            maxSum=Math.max(maxSum,newSum);
-            newSum=Math.max(newSum,0);
         }
         return maxSum;
     }
